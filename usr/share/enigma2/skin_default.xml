@@ -163,6 +163,10 @@
 	<screen name="ChannelContextMenu" position="center,center" size="350,255" title="Channellist menu">
 		<widget name="menu" position="10,10" size="340,230" scrollbarMode="showOnDemand" />
 	</screen>
+	<!-- Buffer Indicator -->
+        <screen name="BufferIndicator" title="" position="c-150,45" size="300,53" backgroundColor="transparent" flags="wfNoBorder" zPosition="100">
+                <widget name="status" position="0,0" size="300,53" backgroundColor="transparent" transparent="1" font="Regular;39" borderColor="black" borderWidth="2" valign="center" halign="center"/>
+        </screen>
 	<!-- Channel selection - TV -->
 	<screen name="ChannelSelection" position="center,center" size="560,430" title="Channel Selection">
 		<ePixmap pixmap="skin_default/buttons/red.png" position="0,0" size="140,40" alphatest="on" />
