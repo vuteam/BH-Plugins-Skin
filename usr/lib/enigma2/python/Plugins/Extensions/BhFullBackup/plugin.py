@@ -73,7 +73,7 @@ class Bh_Bfull_main(Screen, ConfigListScreen):
 	def doBackUp(self):
 		if self.mybk_path.value:
 			mytitle = _("Black Hole Full Backup on: ") + self.mybk_path.value
-			cmd = "/usr/bin/bh_backup_full.sh " + self.mybk_path.value
+			cmd = "/usr/bin/backupsuite.sh " + self.mybk_path.value
 			self.session.open(Console, title = mytitle ,cmdlist = [cmd], finishedCallback = self.myEnd)
 		else:
 			self.session.open(MessageBox, _("Sorry no device found to store backup. Please check your media in Black Hole devices panel."), MessageBox.TYPE_INFO)
